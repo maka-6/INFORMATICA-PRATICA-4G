@@ -9,12 +9,22 @@ public class Main {
         shop.addClient(); // Aggiunge un altro cliente
         System.out.println(shop);
 
+        shop.addClient(); // Aggiunge un altro cliente
+        shop.addClient(); // Aggiunge un altro cliente
+        shop.addClient(); // Aggiunge un altro cliente
+
+        shop.serveClient(); // Serve un cliente
+        shop.serveClient(); // Serve un cliente
         shop.serveClient(); // Serve un cliente
         System.out.println(shop);
 
         shop.serveClient(); // Serve un altro cliente
         System.out.println(shop);
 
+        shop.addClient(); // Aggiunge un altro cliente
+        shop.addClient(); // Aggiunge un altro cliente
+
+        shop.serveClient(); // Tenta di servire un cliente, ma non ce ne sono
         shop.serveClient(); // Tenta di servire un cliente, ma non ce ne sono
         System.out.println(shop);
     }
