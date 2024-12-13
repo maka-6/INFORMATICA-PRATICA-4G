@@ -12,14 +12,15 @@ public class FunWatTest {
         Eroe eroe1 = new Eroe();
         eroe1.name = "Pablo Escobar Zammito";
         eroe1.role = "God";
-        eroe1.description = "Oltre a narcotraffico da Rescaldina fino al cartello messicano di sinaloa, insegna motoria nel per arrotondare";
+        eroe1.description = "Oltre al narcotraffico boss del cartello messicano sinaloa, insegna motoria nel per arrotondare" +
+                "e arrivare a fine mese";
         eroe1.life = 6000;
         eroe1.baseAttack = 500;
         eroe1.baseDefense = 200;
 
 
         Eroe eroe2 = new Eroe();
-        eroe2.name = "Scopacasa surgeria capelli in Turchia";
+        eroe2.name = "Scopacasa dopo surgeria capelli in Turchia";
         eroe2.role = "Rizzer";
         eroe2.description = "Con i suoi capelli freschi e nuovi ti rizza anche i cechi.";
         eroe2.life = 1000;
@@ -29,7 +30,7 @@ public class FunWatTest {
         Eroe eroe3 = new Eroe();
         eroe3.name = "Vecchi Admin del creato";
         eroe3.role = "Moder Discord";
-        eroe3.description = "Lui decide chi vive, chi muore anche chi passerà l'anno, se ti ritiene degno ti regala l'effetto" +
+        eroe3.description = "Lui decide chi vive, chi muore e anche chi passerà l'anno, se ti ritiene degno ti regala l'effetto" +
                 "pgr. Aka 'per grazia ricevuta'" +
                 "attacca con frasi complesse che confondono l'avversario";
         eroe3.life = 1000;
@@ -39,8 +40,8 @@ public class FunWatTest {
         Eroe eroe4 = new Eroe();
         eroe4.name = "Contardi boss del 53bis";
         eroe4.role = "Odia li studenti";
-        eroe4.description = "Puo decidere se darti la salvezza dall'Admin vecchi del creato, o lasciarti vivere" +
-                "nella dannazione eterna dei debiti e recuperi, con la maledizione dell'insufficienza, l'eterno rosso";
+        eroe4.description = "Puo decidere se darti la salvezza dall'vecchi, o lasciarti vivere" +
+                "nella dannazione eterna dei debiti e recuperi, con l'insufficienza.";
         eroe4.life = 5000;
         eroe4.baseAttack = 150;
         eroe4.baseDefense = 200;
@@ -49,19 +50,28 @@ public class FunWatTest {
         eroe5.name = "Albe re di milano";
         eroe5.role = "Anti-sbarchi";
         eroe5.description = "anche se vive a milano, avverte gli sbarchi in tutta italia con cui riattacca" +
-                "con dei leggerissimi elicotteri corazzati calibro 50, muniti di mitraglietta";
+                "affondando i barconi.";
         eroe5.life = 5500;
         eroe5.baseAttack = 150;
         eroe5.baseDefense = 200;
 
         Eroe eroe6 = new Eroe();
         eroe6.name = "Galaxy";
-        eroe6.role = "Imperatore della via lattea impartisce lezioni private";
-        eroe6.description = "Con la forza avverte gli immigrati dal continente nero avvicinarsi in europa con cui punisce" +
+        eroe6.role = "Imperatore della via lattea, impartisce lezioni private.";
+        eroe6.description = "Con la forza avverte gli immigrati del continente nero avvicinarsi in europa con cui punisce" +
                 "severamente con le lezioni private.";
         eroe6.life = 10000;
         eroe6.baseAttack = 200;
         eroe6.baseDefense = 100;
+
+        Eroe eroe7 = new Eroe();
+        eroe7.name = "Leader hamas";
+        eroe7.role = "Leader di hamas e spia israeliana.";
+        eroe7.description = "Collega di Zammito, si occupa di controllare i guadagni, responsabile del 11 settembre" +
+                "ancora adesso si traveste da prof di telecom, da cui recluta i giovani per unirsi ad hamas.";
+        eroe7.life = 600;
+        eroe7.baseAttack = 60;
+        eroe7.baseDefense = 40;
 
         // Aggiunta degli eroi alla lista
         Players.add(eroe1);
@@ -70,6 +80,6 @@ public class FunWatTest {
         Players.add(eroe4);
         Players.add(eroe5);
         Players.add(eroe6);
-
+        Players.add(eroe7);
     }
 }

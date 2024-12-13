@@ -22,8 +22,10 @@ public class Eroe extends Arma{
         this.name = name;
         this.role = role;
         this.life = life;
+        this.description = description;
+        this.defeated = false;
         this.baseAttack = baseAttack;
-        this.baseAttack = baseAttack;
+        this.baseDefense = baseDefense;
     }
 
     public String getName() {

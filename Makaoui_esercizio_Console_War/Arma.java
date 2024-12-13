@@ -9,4 +9,9 @@ public class Arma {
     private Boolean oneHand;
     private int Damage;
     private int Reability;
+    private int Weight;
+    private int Price;
+    private int Level;
+
+
 }
