@@ -13,22 +13,22 @@ public class Eroe extends Arma{
     int life;
     int baseAttack;
     int baseDefense;
-    
+
     public Eroe(){
-        super();
-        this.name = "";
-        this.role = "";
-        this.description = "";
-        this.defeated = false;
-        this.life = 100;
-        this.baseAttack = 10;
-        this.baseDefense = 10;
+
+    }
+    
+    public Eroe( String name, String role, String description, int life, int baseAttack, int baseDefense){
+        this.name = name;
+        this.role = role;
+        this.life = life;
+        this.baseAttack = baseAttack;
+        this.baseAttack = baseAttack;
     }
 
     public String getName() {
         return name;
     }
-
     public void setName(String name) {
         this.name = name;
     }
@@ -36,7 +36,6 @@ public class Eroe extends Arma{
     public String getRole() {
         return role;
     }
-
     public void setRole(String role) {
         this.role = role;
     }
@@ -44,15 +43,13 @@ public class Eroe extends Arma{
     public String getDescription() {
         return description;
     }
-
     public void setDescription(String description) {
         this.description = description;
     }
 
-    public Boolean isDefeated() {
+    public Boolean getDefeated() {
         return defeated;
     }
-
     public void setDefeated(Boolean defeated) {
         this.defeated = defeated;
     }
@@ -60,7 +57,6 @@ public class Eroe extends Arma{
     public int getLife() {
         return life;
     }
-
     public void setLife(int life) {
         this.life = life;
     }
@@ -68,7 +64,6 @@ public class Eroe extends Arma{
     public int getBaseAttack() {
         return baseAttack;
     }
-
     public void setBaseAttack(int baseAttack) {
         this.baseAttack = baseAttack;
     }
@@ -76,21 +71,7 @@ public class Eroe extends Arma{
     public int getBaseDefense() {
         return baseDefense;
     }
-
     public void setBaseDefense(int baseDefense) {
         this.baseDefense = baseDefense;
-    }
-
-    @Override
-    public String toString() {
-        return "Eroe{" +
-               "name='" + name + '\'' +
-               ", role='" + role + '\'' +
-               ", description='" + description + '\'' +
-               ", defeated=" + defeated +
-               ", life=" + life +
-               ", baseAttack=" + baseAttack +
-               ", baseDefense=" + baseDefense +
-               '}';
     }
 }
