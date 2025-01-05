@@ -94,13 +94,22 @@ class TorneoAdEliminazione {
         System.out.println("\nInizio delle semifinali:");
         giocaEliminatorie(qualificati, 2, vincitori);  // Gioca 2 partite e raccogli i vincitori
 
-        // 6. Gioca la finale
+        // 6. Gioca la finale con spareggio in caso di pareggio
         System.out.println("\nInizio della finale:");
         Partita finale = new Partita(vincitori.get(0), vincitori.get(1));  // Crea la partita finale
         finale.giocaPartita();  // Gioca la finale
         System.out.println("Partita finale: " + finale.getSquadra1() + " vs " + finale.getSquadra2());
         System.out.println("Risultato finale: " + finale.getPunteggioSquadra1() + " - " + finale.getPunteggioSquadra2());
-        System.out.println("Ha vinto " + finale.getWinner());  // Mostra il vincitore finale
+
+        // Se la finale finisce in pareggio, si gioca lo spareggio
+        if (finale.getPunteggioSquadra1() == finale.getPunteggioSquadra2()) {
+            Spareggio spareggio = new Spareggio(finale.getSquadra1(), finale.getSquadra2());
+            String vincitoreSpareggio = spareggio.giocaSpareggio(); // Gioca lo spareggio
+            System.out.println("La partita finisce in pareggio, si giocano gli spareggi.");
+            System.out.println("Vincitore degli spareggi: " + vincitoreSpareggio);
+        } else {
+            System.out.println("Ha vinto " + finale.getWinner());  // Mostra il vincitore finale
+        }
     }
 
     // Metodo per creare i gironi e assegnare i partecipanti
