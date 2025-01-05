@@ -1,9 +1,9 @@
 package Makaoui_FAD_06_mini_progetto_OOP;
 
 public class Statistiche {
-    private Integer punteggio;
-    private Integer puntiFatti;
-    private Integer puntiSubiti;
+    private int punteggio;
+    private int puntiFatti;
+    private int puntiSubiti;
 
     public Statistiche() {
         this.punteggio = 0;
@@ -11,23 +11,23 @@ public class Statistiche {
         this.puntiSubiti = 0;
     }
 
-    public void setPunteggio(Integer punteggio) {
+    public void setPunteggio(int punteggio) {
         this.punteggio = punteggio;
     }
-    public void setPuntiFatti(Integer puntiFatti) {
+    public void setPuntiFatti(int puntiFatti) {
         this.puntiFatti = puntiFatti;
     }
-    public void setPuntiSubiti(Integer puntiSubiti) {
+    public void setPuntiSubiti(int puntiSubiti) {
         this.puntiSubiti = puntiSubiti;
     }
 
-    public Integer getPunteggio() {
+    public int getPunteggio() {
         return punteggio;
     }
-    public Integer getPuntiFatti() {
+    public int getPuntiFatti() {
         return puntiFatti;
     }
-    public Integer getPuntiSubiti() {
+    public int getPuntiSubiti() {
         return puntiSubiti;
     }
 
@@ -43,7 +43,7 @@ public class Statistiche {
         this.puntiSubiti += punti;
     }
 
-    Integer differenzaPunti(){
+    int differenzaPunti(){
         return puntiFatti - puntiSubiti;
     }
     
