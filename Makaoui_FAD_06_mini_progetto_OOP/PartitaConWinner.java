@@ -1,14 +1,17 @@
 package Makaoui_FAD_06_mini_progetto_OOP;
 
-public class Partita {
+import java.util.Random;
+
+public class PartitaConWinner {
     private String squadra1;
     private String squadra2;
     private Integer punteggioSquadra1 = 0;
     private Integer punteggioSquadra2 = 0;
 
-    public Partita(String squadra1, String squadra2) {
+    public PartitaConWinner(String squadra1, String squadra2) {
         this.squadra1 = squadra1;
         this.squadra2 = squadra2;
+        giocaPartita();
     }
 
     public String getSquadra1() {
@@ -50,9 +53,15 @@ public class Partita {
         
     }
 
+    void giocaPartita(){
+        Random random = new Random();
+        punteggioSquadra1 = random.nextInt(15);
+        punteggioSquadra2 = random.nextInt(15);
+    }
+
     @Override
     public String toString() {
-        return squadra1 + " vs " + squadra2 + "\n" + punteggioSquadra1 + "-" + punteggioSquadra2;
+        return squadra1 + " vs " + squadra2 + " : " + punteggioSquadra1 + "-" + punteggioSquadra2;
     }
 
 }

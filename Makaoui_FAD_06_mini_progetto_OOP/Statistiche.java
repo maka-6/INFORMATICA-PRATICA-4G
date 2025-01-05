@@ -1,3 +1,5 @@
+package Makaoui_FAD_06_mini_progetto_OOP;
+
 public class Statistiche {
     private Integer punteggio;
     private Integer puntiFatti;
