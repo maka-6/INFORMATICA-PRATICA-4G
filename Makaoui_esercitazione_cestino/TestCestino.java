@@ -3,12 +3,17 @@ package Makaoui_esercitazione_cestino;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
 
 public class TestCestino {
     public static void main(String[] args) {
 
         Cestino trashcanFood = new Cestino( 40  , "Umido", "Marrone", 20);
         Cestino trashcanGlass = new Cestino();
+
+        ArrayList<Cestino> cestino = new ArrayList<Cestino>();
+        cestino.add(trashcanFood);
+        cestino.add(trashcanGlass);
 
         InputStreamReader in = new InputStreamReader(System.in);
         BufferedReader key = new BufferedReader(in);
@@ -29,15 +34,20 @@ public class TestCestino {
             System.out.println("Inserisci un livello: ");
             level = Integer.parseInt(key.readLine());
             trashcanUser = new Cestino(capacity, type, color, level);
-            System.out.println(trashcanUser.toString());
+            cestino.add(trashcanUser);
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
             System.out.print("");
         }
 
-        System.out.println(trashcanGlass.toString());
-        System.out.println(trashcanFood.toString());
+        StringBuilder stringBuilder = new StringBuilder();
+
+        for (Cestino c : cestino) {
+            System.out.println(c.toString());
+            stringBuilder.append(c.toString());
+            stringBuilder.append("\n");
+        }
 
     }
 }
