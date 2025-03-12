@@ -7,11 +7,11 @@ import java.awt.event.ActionEvent;
 public class MainFrame extends JFrame {
     JLabel topPanel, midPanel, bottomPanel;
     JTextField textField;
-
+    /*
     public MainFrame() {
 
         setLayout(new BorderLayout());
-        setTitle("Makaoui Esercizio App");
+        setTitle("Makaoui Esercizio Main");
         setBounds(100, 100, 450, 300);
         textField = new JTextField();
         textField.setEditable(true);
@@ -24,4 +24,5 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
     }
+    */
 }
