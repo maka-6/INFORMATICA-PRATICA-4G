@@ -1,0 +1,5 @@
+Nome: nergo
+Cognome: negrissimo
+Genere: Female
+Interessi: Sport Lettura
+Origine: Italia
