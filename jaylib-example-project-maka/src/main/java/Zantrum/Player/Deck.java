@@ -1,8 +1,8 @@
-import java.util.ArrayList;
-import java.io.FileReader;
-import java.io.FileWriter;
+package Zantrum.Player;
 
-import Cards.Card;
+import java.util.ArrayList;
+
+import Zantrum.Cards.Card;
 
 public class Deck {
 

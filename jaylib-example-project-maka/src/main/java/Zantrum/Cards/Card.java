@@ -1,4 +1,4 @@
-package Cards;
+package Zantrum.Cards;
 
 public class Card {
 

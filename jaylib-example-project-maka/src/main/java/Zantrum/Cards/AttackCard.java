@@ -1,4 +1,4 @@
-package Cards;
+package Zantrum.Cards;
 
 public class AttackCard extends Card {
     int damage;

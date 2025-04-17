@@ -1,4 +1,4 @@
-package Cards;
+package Zantrum.Cards;
 
 public class HealCard extends Card {
     int heal;

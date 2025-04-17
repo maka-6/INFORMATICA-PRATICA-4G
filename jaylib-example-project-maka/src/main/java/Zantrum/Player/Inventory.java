@@ -1,9 +1,11 @@
+package Zantrum.Player;
+
 import java.util.ArrayList;
 
-import Cards.AttackCard;
-import Cards.Card;
-import Cards.DefenseCard;
-import Cards.HealCard;
+import Zantrum.Cards.AttackCard;
+import Zantrum.Cards.Card;
+import Zantrum.Cards.DefenseCard;
+import Zantrum.Cards.HealCard;
 
 import java.io.FileReader;
 import java.io.IOException;
