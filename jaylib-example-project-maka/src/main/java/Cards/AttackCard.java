@@ -2,9 +2,10 @@ package Cards;
 
 public class AttackCard extends Card {
     int damage;
+    CardType type;
 
-    public AttackCard(String name, int life, int number, int damage, String description, int rarity, int defense, String origin) {
-        super(name, life, number, description, rarity, origin);
+    public AttackCard(String name, int life, int number, int damage, String description, int rarity, String origin) {
+        super(name, life, number, description, rarity, origin, CardType.ATTACK);
         this.damage = damage;
     }
 

@@ -3,8 +3,8 @@ package Cards;
 public class HealCard extends Card {
     int heal;
 
-    public HealCard(String name, int life, int number, int damage, String description, int rarity, int defense, String origin) {
-        super(name, life, number, description, rarity, origin);
+    public HealCard(String name, int life, int number, int heal, String description, int rarity, String origin) {
+        super(name, life, number, description, rarity, origin, CardType.HEAL);
         this.heal = heal;
     }
 
