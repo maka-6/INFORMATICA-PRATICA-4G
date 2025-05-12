@@ -1,4 +1,3 @@
-package Lavoro_gruppi_Calcolatrice_Scientifica_Grafica.src;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.awt.Color;

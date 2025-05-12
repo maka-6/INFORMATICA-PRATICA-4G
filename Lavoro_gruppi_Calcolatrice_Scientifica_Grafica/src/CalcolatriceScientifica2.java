@@ -1,5 +1,3 @@
-package Lavoro_gruppi_Calcolatrice_Scientifica_Grafica.src;
-
 // latex
 import org.scilab.forge.jlatexmath.Char;
 import org.scilab.forge.jlatexmath.TeXFormula;
