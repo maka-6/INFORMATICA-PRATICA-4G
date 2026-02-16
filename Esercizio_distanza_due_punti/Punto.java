@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 /*
 * Autore: Youness Makaoui
 * Classe: 4G
@@ -90,10 +89,10 @@ public class Punto {
         System.out.println(puntoUtente.toString());
 
         if ( punto.compareTo(puntoUtente) == 1 ){
-            System.out.println("Primo punto e' il piu vicino all'origine'");
+            System.out.println("Il tuo punto e' il piu vicino all'origine'");
 
         } else if ( punto.compareTo(puntoUtente) == -1 ){
-            System.out.println("Il tuo punto e' il piu vicino all'origine'");
+            System.out.println("Il primo punto e' il piu vicino all'origine'");
 
         } else {
             System.out.println("I due punti sono uguali");
