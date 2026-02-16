@@ -148,7 +148,7 @@ public class CalcolatriceScientifica2 extends JFrame {
         JPanel panel = new JPanel(new GridLayout(5, 1, 5, 5));
         panel.setBackground(new Color(112, 112, 112));
 
-        String[] operators = {"0", "1", "2", "3", "4","5","6","7","8","9"};
+        String[] operators = {"0", "1", "2", "3", "4","5","6","7","8","9","."};
 
         for (String text : operators) {
             JButton b = new JButton(text);
@@ -248,6 +248,7 @@ class OperazioniMatematiche2 {
             case "7":
             case "8":
             case "9":
+            case ".":
                 expression += operazione;
                 break;
 
@@ -432,7 +433,7 @@ class OperazioniMatematiche2 {
 
                  */
                         "\\\\sqrt\\[(\\d+)\\]\\{([^}]+)\\}" +               // radice n-esima
-                        "|(\\d+)\\^(\\d+)" +                           // potenza
+                        "(\\d+(\\.\\d+)?)\\^(\\d+(\\.\\d+)?)" +                           // potenza
                         "|log_\\{([^}]+)}\\{([^}]+)}" +                  // log con due argomenti tra {}
                         "|(Sin|Cos|Tan|Cot|Ln)\\{([^}]+)\\}"
                                 +
@@ -440,8 +441,18 @@ class OperazioniMatematiche2 {
                         "|(\\d+!)" +                                   // fattoriale
                         "|(\\d+\\.?\\d*)"                              // numeri normali
         );
+        /*
+        Pattern token = Pattern.compile(
+                "\\\\sqrt\\[(\\d+)\\]\\{([^}]+)}" +      // Radice n-esima
+                        "|(\\d+)\\^(\\d+)" +                    // Potenza
+                        "|log_\\{([^}]+)}\\{([^}]+)}" +         // Logaritmo con base esplicita
+                        "|(Sin|Cos|Tan|Cot|Ln)\\{([^}]+)}" +    // Funzioni trigonometriche e logaritmo naturale
+                        "|(\\d+!)" +                            // Fattoriale
+                        "|(\\d*\\.?\\d+)"                       // Numeri normali con decimali opzionali
+        // );*/
 
-        // Esegui parsing dell’espressione per speciali
+
+    // Esegui parsing dell’espressione per speciali
         expression = expression.replaceAll("π", String.valueOf(Math.PI));
 
         // contiene i valori in ordine dell'espressione
